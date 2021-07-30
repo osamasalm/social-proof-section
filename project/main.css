@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15px;
+    font-family: 'Oxygen', sans-serif;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+    background-color: hsl(0, 0%, 100%);
+    background-image: url(imgs/bg-pattern-top-desktop.svg), url(imgs/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top left, bottom right;
+}
+
+main {
+    max-width: 1440px;
+    margin: 10px;
+}
+
+/* TOP PART OF SCTION  */
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.txt1 h1 {
+    max-width: 400px;
+    font-size: 40px;
+    font-weight: bold;
+    color: hsl(300, 43%, 22%);
+}
+
+.txt1 p{
+    max-width: 430px;
+    margin-top: 15px;
+    font-weight: normal;
+    color: hsl(303, 10%, 53%);
+}
+
+.rate-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.card {
+    background-color: hsl(300, 24%, 96%);
+    padding: 15px 50px 15px 30px;
+    border-radius: 10px;
+}
+
+.rate-cards p {
+    display: inline-block;
+    margin: 0 30px 0 30px;
+    font-weight: medium;
+    color: hsl(300, 43%, 22%);
+}
+
+.rate-cards1 {
+    margin-right: 100px;
+}
+
+.rate-cards2 {
+    padding-right: 25px;
+    margin-right: 50px;
+}
+
+/* THE BOTTOM SECTION */
+
+.review-cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.review {
+    margin: 10px;
+    background-color: hsl(300, 43%, 22%);
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.profile-name {
+    min-width: 120px;
+}
+
+.review h2, .review p {
+    color: hsl(0, 0%, 100%);;
+}
+
+.review h3{
+    color: hsl(333, 80%, 67%);
+    font-weight: lighter;
+}
+
+.review h2 {
+    font-size: 18px;
+}
+
+.review p {
+    font-weight: lighter;
+    line-height: 25px;
+    max-width: 280px;
+}
+
+.review img {
+    border-radius: 50%;
+}
+
+.review-cards1 {
+    max-height: 300px;
+}
+
+.review-cards2 {
+    margin-top: 30px;
+    max-height: 300px;
+}
+
+.review-cards3 {
+    margin-top: 60px;
+    max-height: 300px;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 983px) {
+
+    body {
+        height: auto;
+        background-image: url(imgs/bg-pattern-top-mobile.svg), url(imgs/bg-pattern-bottom-mobile.svg);
+        background-repeat: no-repeat, no-repeat;
+        background-position: top left, bottom right;
+    }
+    .container {
+        margin-top: 50px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .txt1 p {
+        margin-bottom: 40px;
+    }
+
+    .card {
+        margin: 10px 0;
+        width: 100%;
+    }
+
+    .card p {
+        display: block;
+    }
+
+    .review-cards {
+        flex-direction: column;
+        height: fit-content;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+}
